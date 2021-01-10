@@ -1,2 +1,2 @@
 # BenLoveBot
-How many does ben say he loves us :D
+How many times does ben say he loves us :D
