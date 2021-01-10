@@ -4,7 +4,7 @@ How many times does ben say he loves us :D
 # Backstory
 Our ECE 2025 discord server has some cool people in it and Ben kept saying "love". He said it so much, someone had to make a discord bot to track how many times he said it.
 
-![make a bot](https://imgur.com/wMlQjtr.png)
+![make a bot](https://imgur.com/bf0dZfV.png)
 
 # The Bot
 The bot is written in javascript, and connects to discord using node.js. I used to store the info in a text file, but decided to switch to Sequelize which is an ORM for node.js, compatible with Sqlite. I currently have it hosted on Amazon's EC2 servers.
