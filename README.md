@@ -11,7 +11,7 @@ The bot is written in javascript, and connects to discord using node.js. I used 
 
 Using the command `!benlove` will output a count for the total number of times he said the word.
 
-![benlove](https://imgur.com/Q9PaT3w.png)
+![benlove](https://imgur.com/hiWoJtO.png)
 
 Using the command `!graph` will output a 5 day line graph for the word frequency. It uses quickchart.io's api to generate this.
 
