@@ -140,7 +140,29 @@ client.on('message', async msg => {
         //format is: .https://quickchart.io/chart?bkg=white&c={type:'line',data:{labels:[01-05-2021,01-06,2021,etc.],datasets:[{label:'loves',data:[1,2,etc.]}]}}
 	    msg.channel.send(beginning + d1 + middle + d2 + end);
     }
-
+    //kms stands for "keep me sad"
+    //university is hard, sometimes you just want to share your emotions with a gif
+    if (msg.content === '!kms') {
+        let images = ["https://i.pinimg.com/originals/db/4f/d7/db4fd79da65085b9fc334c3f36811bb4.gif",
+            "https://thumbs.gfycat.com/AshamedNegligibleApisdorsatalaboriosa-small.gif",
+            "http://68.media.tumblr.com/693ddd028e3e518fc44492e8d50534e1/tumblr_nj2luf4Psc1rzaefho1_500.gif",
+            "https://media1.tenor.com/images/1923b7f124ace93d929a4229e1863328/tenor.gif?itemid=11724454",
+            "https://data.whicdn.com/images/316990691/original.gif",
+            "https://i.imgur.com/htSx8Zi.gif",
+            "https://media1.giphy.com/media/26BGD4XaoPO3zTz9K/giphy.gif",
+            "https://i.gifer.com/FvdQ.gif",
+            "https://data.whicdn.com/images/332194428/original.gif"]
+        let random = Math.floor(Math.random() * images.length);
+        let link = images[random];
+        const embed = {
+            "title": "its okay.",
+            "image": {
+                "url": link
+            },
+            "color": 10181046
+        };
+        msg.channel.send({ embed });
+    }
     //setup function which I used to add in the word occurances before the bot creation date manually
     //should never be called again, kept for documentation purposes
     //no issues if someone types this command as the dates it overwrites are hardcoded
